@@ -1,4 +1,9 @@
 htop
 iftop
 iotop
-
+vim-minimal
+ddcutil
+distrobox
+langpacks-en
+openssl
+steam-devices
