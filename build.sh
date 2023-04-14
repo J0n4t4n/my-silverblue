@@ -19,6 +19,18 @@ trim_all() {
     set +f
 }
 
+set -eux
+
+RELEASE="$(rpm -E %fedora)"
+
+wget -P /tmp/rpms \
+    https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-${RELEASE}.noarch.rpm \
+    https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-${RELEASE}.noarch.rpm
+
+rpm-ostree install \
+    /tmp/rpms/*.rpm \
+    fedora-repos-archive
+
 [ -e "/tmp/packages.txt" ] \
   && packages=$(cat /tmp/packages.txt) \
   || packages=$(cat packages.txt)
