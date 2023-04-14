@@ -19,7 +19,7 @@ trim_all() {
     set +f
 }
 
-[ -e "/tmp/packages" ] \
+[ -e "/tmp/packages.txt" ] \
   && packages=$(cat /tmp/packages.txt) \
   || packages=$(cat packages.txt)
 
