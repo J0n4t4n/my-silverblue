@@ -7,3 +7,4 @@ distrobox
 langpacks-en
 openssl
 steam-devices
+python3-pip

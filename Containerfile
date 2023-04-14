@@ -12,6 +12,8 @@ COPY build.sh /tmp/build.sh
 COPY post-install.sh /tmp/post-install.sh
 COPY packages.txt /tmp/packages.txt
 
+COPY components/yafti /
+
 RUN /tmp/build.sh
 RUN /tmp/post-install.sh
 RUN rm -rf /tmp/* /var/*

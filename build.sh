@@ -38,3 +38,5 @@ rpm-ostree install \
 trimmed_packages=$(trim_all "$packages")
 
 rpm-ostree install $trimmed_packages
+
+pip3 install --prefix=/usr yafti
