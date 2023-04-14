@@ -8,3 +8,7 @@ langpacks-en
 openssl
 steam-devices
 python3-pip
+intel-media-driver
+nvme-cli
+nvtop
+gnome-tweaks
