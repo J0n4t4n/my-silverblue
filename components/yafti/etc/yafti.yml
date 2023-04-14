@@ -89,7 +89,7 @@ screens:
           default: false
           packages:
             - OBS Studio: com.obsproject.Studio
-            - VkCapture for OBS: org.freedesktop.Platform.VulkanLayer.OBSVkCapture
+            - VkCapture for OBS: org.freedesktop.Platform.VulkanLayer.OBSVkCapture//22.08
             - Gstreamer for OBS: com.obsproject.Studio.Plugin.Gstreamer
             - Gstreamer VAAPI for OBS: com.obsproject.Studio.Plugin.GStreamerVaapi
   final-screen:
