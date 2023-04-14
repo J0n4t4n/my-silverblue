@@ -39,7 +39,7 @@ trimmed_packages=$(trim_all "$packages")
 
 rpm-ostree install $trimmed_packages
 
-rpm-ostree override remove firefox
+rpm-ostree override remove firefox firefox-langpacks
 
 # Enable initramfs generation to fix keymap in LUKS
 rpm-ostree initramfs --enable
