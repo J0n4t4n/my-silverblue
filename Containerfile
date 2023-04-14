@@ -14,10 +14,10 @@ COPY packages.txt /tmp/packages.txt
 
 COPY components/yafti /
 
+COPY --from=ghcr.io/ublue-os/config:latest /files/ublue-os-update-services /
+
 RUN /tmp/build.sh
 RUN /tmp/post-install.sh
 RUN rm -rf /tmp/* /var/*
 RUN ostree container commit
 RUN mkdir -p /var/tmp && chmod -R 1777 /var/tmp
-
-COPY --from=ghcr.io/ublue-os/config:latest /files/ublue-os-update-services /
