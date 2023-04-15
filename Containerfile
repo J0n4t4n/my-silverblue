@@ -18,6 +18,5 @@ COPY --from=ghcr.io/ublue-os/config:latest /files/ublue-os-update-services /
 
 RUN /tmp/build.sh
 RUN /tmp/post-install.sh
-RUN bash -c "shopt -s extglob && rm -rf /tmp/* /var/!(run)"
 RUN ostree container commit
 RUN mkdir -p /var/tmp && chmod -R 1777 /var/tmp
