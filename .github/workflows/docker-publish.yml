@@ -39,8 +39,8 @@ jobs:
       id-token: write
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      #- name: Checkout repository
+      #  uses: actions/checkout@v3
 
       # Install the cosign tool except on PR
       # https://github.com/sigstore/cosign-installer
@@ -116,5 +116,6 @@ jobs:
       - name: Bulding Container with Kaniko
         run: >
           /kaniko/executor
+          --context=${{ github.repositoryUrl }}\#${{ github.ref }}
           --dockerfile=Containerfile
           --destination=${{ env.registry }}/${{ env.IMAGE_NAME }}
