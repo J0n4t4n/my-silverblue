@@ -119,5 +119,4 @@ jobs:
           --context=${{ github.repositoryUrl }}\#${{ github.ref }}
           --dockerfile=Containerfile
           --destination=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.ref_name }}
-          --verbosity=debug
           --no-push
