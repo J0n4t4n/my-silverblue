@@ -120,3 +120,4 @@ jobs:
           --dockerfile=Containerfile
           --destination=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.ref_name }}
           --verbosity=debug
+          --no-push
