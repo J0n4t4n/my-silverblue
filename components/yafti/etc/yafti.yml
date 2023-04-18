@@ -57,41 +57,45 @@ screens:
             - Font Downloader: org.gustavoperedo.FontDownloader
         Web Browsers:
           description: Additional browsers to complement Chrome
-          default: false
+          default: true
           packages:
             - Brave: com.brave.Browser
-            - Mozilla Firefox: org.mozilla.firefox
         Media:
           description: "Music to your ears!"
-          default: false
+          default: true
           packages:
             - Cider: sh.cider.Cider
             - Plexamp: com.plexamp.Plexamp
             - mpv: io.mpv.Mpv
         Gaming:
           description: "Rock and Stone!"
-          default: false
+          default: true
           packages:
             - Bottles: com.usebottles.bottles
-            - Discord: com.discordapp.Discord
             - MangoHUD: org.freedesktop.Platform.VulkanLayer.MangoHud//22.08
             - Steam: com.valvesoftware.Steam
             - Gamescope for Steam: com.valvesoftware.Steam.Utility.gamescope
             - Proton Updater for Steam: net.davidotek.pupgui2
         Office:
           description: Bow to Capitalism
-          default: false
+          default: true
           packages:
             - LibreOffice: org.libreoffice.LibreOffice
             - Obsidian: md.obsidian.Obsidian
         Streaming:
           description: Stream to the Internet
-          default: false
+          default: true
           packages:
             - OBS Studio: com.obsproject.Studio
             - VkCapture for OBS: org.freedesktop.Platform.VulkanLayer.OBSVkCapture//22.08
             - Gstreamer for OBS: com.obsproject.Studio.Plugin.Gstreamer
             - Gstreamer VAAPI for OBS: com.obsproject.Studio.Plugin.GStreamerVaapi
+        Communication:
+          description: The socials
+          default: true
+          packages:
+            - Discord: com.discordapp.Discord
+            - Telegram: org.telegram.desktop
   final-screen:
     source: yafti.screen.title
     values:
