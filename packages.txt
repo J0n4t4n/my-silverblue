@@ -15,4 +15,3 @@ gnome-tweaks
 open-fprintd
 fprintd-clients
 fprintd-clients-pam
-python3-validity
