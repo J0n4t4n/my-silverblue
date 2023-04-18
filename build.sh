@@ -31,15 +31,18 @@ rpm-ostree install \
     /tmp/rpms/*.rpm \
     fedora-repos-archive
 
+wget -P /etc/yum.repos.d \
+    https://copr.fedorainfracloud.org/coprs/tigro/python-validity/repo/fedora-${RELEASE}/tigro-python-validity-fedora-${RELEASE}.repo
+
 [ -e "/tmp/packages.txt" ] \
   && packages=$(cat /tmp/packages.txt) \
   || packages=$(cat packages.txt)
 
 trimmed_packages=$(trim_all "$packages")
 
-rpm-ostree install $trimmed_packages
+rpm-ostree override remove firefox firefox-langpacks fprintd fprintd-pam
 
-rpm-ostree override remove firefox firefox-langpacks
+rpm-ostree install $trimmed_packages
 
 # Enable initramfs generation to fix keymap in LUKS
 #rpm-ostree initramfs --enable
