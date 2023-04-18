@@ -18,7 +18,15 @@ COPY --from=ghcr.io/ublue-os/config:latest /files/ublue-os-update-services /
 
 RUN /tmp/build.sh
 RUN /tmp/post-install.sh
-RUN rmdir --ignore-fail-on-non-empty /tmp /var
-RUN rm -rf /tmp/* /var/*
+
+RUN ls -alhF /var/cache/rpm-ostree/repomd/updates-archive-37-x86_64
+RUN ls -alhF /var/cache/rpm-ostree/repomd/updates-archive-37-x86_64/gpgdir
+
+RUN rm -rf /tmp/* /var/* || true
+
+RUN ls -alhF /var/cache/rpm-ostree/repomd/updates-archive-37-x86_64
+RUN ls -alhF /var/cache/rpm-ostree/repomd/updates-archive-37-x86_64/gpgdir
+
 RUN ostree container commit
+
 RUN mkdir -p /var/tmp && chmod -R 1777 /var/tmp
