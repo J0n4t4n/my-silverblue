@@ -1,17 +1,26 @@
+# Libraries
+langpacks-en
+openssl
+
+# Utilities
 htop
 iftop
 iotop
+nvtop
+nvme-cli
+python3-pip
+distrobox
 vim-minimal
 ddcutil
-distrobox
-langpacks-en
-openssl
+
+# Drivers
 steam-devices
-python3-pip
 intel-media-driver
-nvme-cli
-nvtop
+
+# Applications
 gnome-tweaks
+
+# Fingerprint
 open-fprintd
 fprintd-clients
 fprintd-clients-pam

@@ -10,7 +10,8 @@ ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION}"
 
 COPY build.sh /tmp/build.sh
 COPY post-install.sh /tmp/post-install.sh
-COPY packages.txt /tmp/packages.txt
+COPY install-packages.txt /tmp/install-packages.txt
+COPY remove-packages.txt /tmp/remove-packages.txt
 
 COPY components/yafti /
 COPY components/nitrokey /

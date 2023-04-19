@@ -1,0 +1,6 @@
+firefox
+firefox-langpacks
+
+# Replaced with T480 compatible version
+fprintd
+fprintd-pam
