@@ -4,3 +4,6 @@ firefox-langpacks
 # Replaced with T480 compatible version
 fprintd
 fprintd-pam
+
+# For throttled to work
+thermald

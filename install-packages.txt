@@ -8,6 +8,7 @@ iftop
 iotop
 nvtop
 nvme-cli
+s-tui
 python3-pip
 distrobox
 vim-minimal
