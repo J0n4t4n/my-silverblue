@@ -16,6 +16,7 @@ ddcutil
 # Drivers
 steam-devices
 intel-media-driver
+throttled
 
 # Applications
 gnome-tweaks
