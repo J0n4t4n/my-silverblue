@@ -13,6 +13,7 @@ COPY post-install.sh /tmp/post-install.sh
 COPY packages.txt /tmp/packages.txt
 
 COPY components/yafti /
+COPY components/nitrokey /
 
 COPY --from=ghcr.io/ublue-os/config:latest /files/ublue-os-update-services /
 
