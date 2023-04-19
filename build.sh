@@ -18,7 +18,7 @@ wget -P /etc/yum.repos.d \
 while read -r line
 do
     [[ $line = \#* ]] && continue
-    removePackages="${removePackages} ${line}"
+    removePackages="${removePackages:-} ${line}"
 done < "/tmp/remove-packages.txt"
 
 rpm-ostree override remove ${removePackages}
@@ -26,7 +26,7 @@ rpm-ostree override remove ${removePackages}
 while read -r line
 do
     [[ $line = \#* ]] && continue
-    installPackages="${installPackages} ${line}"
+    installPackages="${installPackages:-} ${line}"
 done < "/tmp/install-packages.txt"
 
 rpm-ostree install ${installPackages}
