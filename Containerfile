@@ -21,13 +21,7 @@ COPY --from=ghcr.io/ublue-os/config:latest /files/ublue-os-update-services /
 RUN /tmp/build.sh
 RUN /tmp/post-install.sh
 
-RUN ls -alhF /var/cache/rpm-ostree/repomd/updates-archive-37-x86_64 || true
-RUN ls -alhF /var/cache/rpm-ostree/repomd/updates-archive-37-x86_64/gpgdir || true
-
-RUN rm -rf /tmp/* /var/* || true
-
-RUN ls -alhF /var/cache/rpm-ostree/repomd/updates-archive-37-x86_64 || true
-RUN ls -alhF /var/cache/rpm-ostree/repomd/updates-archive-37-x86_64/gpgdir || true
+RUN rm -rf /tmp/* /var/*
 
 RUN ostree container commit
 
