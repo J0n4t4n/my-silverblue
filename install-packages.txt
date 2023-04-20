@@ -1,6 +1,5 @@
 # Libraries
 langpacks-en
-openssl
 
 # Utilities
 htop
@@ -12,7 +11,6 @@ s-tui
 python3-pip
 distrobox
 vim-minimal
-ddcutil
 wireguard-tools
 
 # Drivers
@@ -20,20 +18,7 @@ steam-devices
 intel-media-driver
 throttled
 
-# Applications
-gnome-tweaks
-
 # Fingerprint
 open-fprintd
 fprintd-clients
 fprintd-clients-pam
-
-# Gnome Shell Extensions
-gnome-shell-extension-appindicator
-gnome-shell-extension-blur-my-shell
-gnome-shell-extension-dash-to-dock
-gnome-shell-extension-gsconnect
-gnome-shell-extension-netspeed
-gnome-shell-extension-no-overview
-gnome-shell-extension-user-theme
-nautilus-gsconnect
