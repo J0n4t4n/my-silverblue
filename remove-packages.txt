@@ -6,4 +6,4 @@ fprintd
 fprintd-pam
 
 # For throttled to work
-thermald
+#thermald

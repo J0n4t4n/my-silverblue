@@ -16,7 +16,7 @@ wireguard-tools
 # Drivers
 steam-devices
 intel-media-driver
-throttled
+#throttled
 
 # Fingerprint
 open-fprintd

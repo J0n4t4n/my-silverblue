@@ -14,7 +14,7 @@ rpm-ostree install \
 
 wget -P /etc/yum.repos.d \
     https://copr.fedorainfracloud.org/coprs/tigro/python-validity/repo/fedora-${RELEASE}/tigro-python-validity-fedora-${RELEASE}.repo \
-    https://copr.fedorainfracloud.org/coprs/abn/throttled/repo/fedora-${RELEASE}/abn-throttled-fedora-${RELEASE}.repo
+    #https://copr.fedorainfracloud.org/coprs/abn/throttled/repo/fedora-${RELEASE}/abn-throttled-fedora-${RELEASE}.repo
 
 while read -r line
 do
