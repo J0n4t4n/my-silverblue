@@ -13,6 +13,7 @@ python3-pip
 distrobox
 vim-minimal
 ddcutil
+wireguard-tools
 
 # Drivers
 steam-devices
@@ -26,3 +27,16 @@ gnome-tweaks
 open-fprintd
 fprintd-clients
 fprintd-clients-pam
+
+# Gnome Shell Extensions
+gnome-shell-extension-appindicator
+gnome-shell-extension-blur-my-shell
+gnome-shell-extension-dash-to-dock
+gnome-shell-extension-gsconnect
+gnome-shell-extension-mediacontrols
+gnome-shell-extension-netspeed
+gnome-shell-extension-no-overview
+gnome-shell-extension-refresh-wifi
+gnome-shell-extension-sound-output-device-chooser
+gnome-shell-extension-user-theme
+nautilus-gsconnect
