@@ -34,27 +34,9 @@ screens:
           default: true
           packages:
             - Blackbox Terminal: com.raggesilver.BlackBox
-            - Calculator: org.gnome.Calculator
-            - Calendar: org.gnome.Calendar
-            - Characters: org.gnome.Characters
-            - Connections: org.gnome.Connections
-            - Contacts: org.gnome.Contacts
-            - Document Viewer: org.gnome.Evince
-            - Extensions Manager: com.mattjakeman.ExtensionManager
-            - Firmware: org.gnome.Firmware
             - Fedora Media Writer: org.fedoraproject.MediaWriter
             - Google Chrome: com.google.Chrome
             - Flatseal Permissions Manager: com.github.tchx84.Flatseal
-            - Logs: org.gnome.Logs
-            - Maps: org.gnome.Maps
-            - Nautilus Preview: org.gnome.NautilusPreviewer
-            - Text Editor: org.gnome.TextEditor
-            - Weather: org.gnome.Weather
-            - Disk Usage Analyzer: org.gnome.baobab
-            - Clocks: org.gnome.clocks
-            - Picture Viewer: org.gnome.eog
-            - Font Viewer: org.gnome.font-viewer
-            - Font Downloader: org.gustavoperedo.FontDownloader
         Web Browsers:
           description: Additional browsers to complement Chrome
           default: true
@@ -101,8 +83,5 @@ screens:
     values:
       title: "All done!"
       icon: "/path/to/icon"
-      links:
-        - "Install More Applications":
-            run: /usr/bin/gnome-software
       description: |
         Thanks for trying My Silverblue, I hope you enjoy it!
