@@ -35,7 +35,5 @@ gnome-shell-extension-dash-to-dock
 gnome-shell-extension-gsconnect
 gnome-shell-extension-netspeed
 gnome-shell-extension-no-overview
-gnome-shell-extension-refresh-wifi
-gnome-shell-extension-sound-output-device-chooser
 gnome-shell-extension-user-theme
 nautilus-gsconnect
