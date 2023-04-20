@@ -1,5 +1,7 @@
 # Libraries
 langpacks-en
+# Required for yafti
+libadwaita
 
 # Utilities
 htop
