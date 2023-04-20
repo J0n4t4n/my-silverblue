@@ -11,3 +11,5 @@ Required to change the keymap during init to DE (for LUKS)
 4. `rpm-ostree install python3-validity`
 
 python3-validity can't be installed in CI, as it fails due to no fingerprinter sensors being present.
+
+5. Setup GPG key
