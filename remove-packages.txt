@@ -9,7 +9,6 @@ fprintd-pam
 thermald
 
 # Gnome Shell Extensions
-gnome-shell-extension-apps-menu
 gnome-shell-extension-background-logo
 gnome-shell-extension-launch-new-instance
 gnome-shell-extension-places-menu
