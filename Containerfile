@@ -13,8 +13,9 @@ COPY post-install.sh /tmp/post-install.sh
 COPY install-packages.txt /tmp/install-packages.txt
 COPY remove-packages.txt /tmp/remove-packages.txt
 
-COPY components/yafti /
+COPY components/ax210-fix /
 COPY components/nitrokey /
+COPY components/yafti /
 
 COPY --from=ghcr.io/ublue-os/config:latest /files/ublue-os-update-services /
 
