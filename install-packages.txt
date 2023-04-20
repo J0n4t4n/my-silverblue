@@ -33,7 +33,6 @@ gnome-shell-extension-appindicator
 gnome-shell-extension-blur-my-shell
 gnome-shell-extension-dash-to-dock
 gnome-shell-extension-gsconnect
-gnome-shell-extension-mediacontrols
 gnome-shell-extension-netspeed
 gnome-shell-extension-no-overview
 gnome-shell-extension-refresh-wifi
