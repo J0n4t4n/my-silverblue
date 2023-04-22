@@ -36,6 +36,7 @@ rpm-ostree install ${installPackages}
 rpm-ostree install python3-cairo-devel cairo-gobject-devel gobject-introspection-devel dbus-glib-devel python3-devel make libX11-devel
 cd /tmp
 git clone https://github.com/erpalma/throttled.git
+mkdir -p /opt/throttled
 ./throttled/install.sh
 cd -
 
