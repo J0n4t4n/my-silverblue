@@ -32,15 +32,4 @@ done < "/tmp/install-packages.txt"
 
 rpm-ostree install ${installPackages}
 
-# Throttled
-rpm-ostree install python3-cairo-devel cairo-gobject-devel gobject-introspection-devel dbus-glib-devel python3-devel make libX11-devel
-rm -rf /var/* /tmp/*
-ostree container commit
-cd /tmp
-git clone https://github.com/erpalma/throttled.git
-mkdir -p /var/opt/throttled
-./throttled/install.sh
-cd -
-
-
 pip3 install --prefix=/usr yafti
