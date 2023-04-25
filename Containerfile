@@ -8,17 +8,15 @@ FROM ${BASE_IMAGE}:${FEDORA_MAJOR_VERSION} AS builder
 ARG IMAGE_NAME="${IMAGE_NAME}"
 ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION}"
 
-COPY build.sh /tmp/build.sh
-COPY post-install.sh /tmp/post-install.sh
-COPY install-packages.txt /tmp/install-packages.txt
-COPY remove-packages.txt /tmp/remove-packages.txt
+COPY --from=ghcr.io/ublue-os/config:latest /files/ublue-os-update-services /
 
 COPY components/ax210-fix /
 COPY components/nitrokey /
 COPY components/yafti /
 
-COPY --from=ghcr.io/ublue-os/config:latest /files/ublue-os-update-services /
+COPY *.sh *.txt /tmp/
 
+RUN /tmp/prepare.sh
 RUN /tmp/build.sh
 RUN /tmp/post-install.sh
 
