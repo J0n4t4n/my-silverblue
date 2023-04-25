@@ -29,3 +29,6 @@ fprintd-clients-pam
 tlp
 powertop
 kernel-tools
+
+# Shell
+zsh
