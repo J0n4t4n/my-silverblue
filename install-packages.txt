@@ -24,3 +24,8 @@ intel-media-driver
 open-fprintd
 fprintd-clients
 fprintd-clients-pam
+
+# Power
+tlp
+powertop
+kernel-tools
