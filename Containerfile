@@ -10,18 +10,16 @@ ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION}"
 
 COPY --from=ghcr.io/ublue-os/config:latest /files/ublue-os-update-services /
 
-COPY components/ax210-fix /
-COPY components/nitrokey /
-COPY components/yafti /
+COPY components/ax210-fix \
+     components/nitrokey \
+     components/yafti \
+     /
 
 COPY *.sh *.txt /tmp/
 
-RUN /tmp/prepare.sh
-RUN /tmp/build.sh
-RUN /tmp/post-install.sh
-
-RUN rm -rf /tmp/* /var/*
-
-RUN ostree container commit
-
-RUN mkdir -p /var/tmp && chmod -R 1777 /var/tmp
+RUN /tmp/prepare.sh && \
+    /tmp/build.sh && \
+    /tmp/post-install.sh && \
+    rm -rf /tmp/* /var/* && \
+    ostree container commit && \
+    mkdir -p /var/tmp && chmod -R 1777 /var/tmp
