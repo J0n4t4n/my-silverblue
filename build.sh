@@ -12,7 +12,8 @@ do
     removePackages="${removePackages:-} ${line}"
 done < "/tmp/remove-packages.txt"
 
-rpm-ostree override remove "${removePackages}"
+# shellcheck disable=SC2086
+rpm-ostree override remove ${removePackages}
 
 while read -r line
 do
@@ -20,6 +21,7 @@ do
     installPackages="${installPackages:-} ${line}"
 done < "/tmp/install-packages.txt"
 
-rpm-ostree install "${installPackages}"
+# shellcheck disable=SC2086
+rpm-ostree install ${installPackages}
 
 pip3 install --prefix=/usr yafti
