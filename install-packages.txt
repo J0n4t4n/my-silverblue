@@ -33,3 +33,14 @@ kernel-tools
 # Shell
 zsh
 stow
+
+# Virtualization
+virt-install
+virt-manager
+virt-viewer
+qemu-kvm
+libvirt-daemon-config-network
+libvirt-daemon-kvm
+guestfs-tools
+python3-libguestfs
+virt-top
