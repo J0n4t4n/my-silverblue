@@ -15,6 +15,7 @@ distrobox
 vim-minimal
 wireguard-tools
 neovim
+gcc
 yakuake
 
 # Drivers
