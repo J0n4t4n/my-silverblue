@@ -16,6 +16,7 @@ vim-minimal
 wireguard-tools
 neovim
 gcc
+binutils
 yakuake
 
 # Drivers
